@@ -32,6 +32,16 @@ nav a {
     transition: color 0.3s ease;
 }
 
+ul a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+ul a:hover {
+    color: #00d9ff;
+}
+
 nav a:hover {
     color: #fff;
 }
@@ -46,6 +56,8 @@ section {
     margin: 50px;
     padding: 20px;
     transition: all 0.3s ease;
+    position: relative; 
+    height: 500px;   
 }
 
 section:hover {
@@ -66,8 +78,9 @@ footer {
 }
 
 .carousel-inner .carousel-item img {
-    height: 200px; 
-    object-fit: cover; 
+    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
+    height: auto;  /* La altura se ajustará automáticamente */
+    object-fit: cover;
     margin:auto;
 }
 
@@ -77,7 +90,40 @@ footer {
     margin-top: 20px; 
 }
 
-#proyecto1-contenido {
-    margin-bottom: 20px; 
+#carouselExampleFade2 {
+    margin: auto; 
+    max-width: 50%; 
+    margin-top: 20px; 
 }
+
+#carouselExampleFade3 {
+    margin: auto; 
+    max-width: 50%; 
+    margin-top: 20px; 
+}
+
+#carouselExampleFade4 {
+    margin: auto; 
+    max-width: 50%; 
+    margin-top: 20px; 
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .carousel-inner .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    #carouselExampleFade,
+    #carouselExampleFade2,
+    #carouselExampleFade3,
+    #carouselExampleFade4 {
+        max-width: 100%;
+    }
+}
+
 
