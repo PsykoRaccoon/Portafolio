@@ -6,7 +6,6 @@ body {
     color: #fff;
 }
 
-
 header {
     background-color: #00a6fb;
     color: #051923;
@@ -43,21 +42,60 @@ ul a:hover {
 }
 
 nav a:hover {
-    color: #fff;
+    color: #00d9ff;
 }
 
 main {
     padding: 20px;
 }
 
-section {
+
+#imgyo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px darkblue;
+}
+
+#Juegos {
     background-color: #0582ca;
     border: 1px solid #00d9ff;
     margin: 50px;
     padding: 20px;
     transition: all 0.3s ease;
     position: relative; 
-    height: 500px;   
+    height: 550px;   
+}
+
+#Yo {
+    background-color: #0582ca;
+    border: 1px solid #00d9ff;
+    margin: 50px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative; 
+    height: 585px;   
+}
+
+#Animaciones {
+    background-color: #0582ca;
+    border: 1px solid #00d9ff;
+    margin: 50px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative; 
+    height: 325px;   
+}
+
+#Creacion {
+    background-color: #0582ca;
+    border: 1px solid #00d9ff;
+    margin: 50px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative; 
+    height: 425px;   
 }
 
 section:hover {
@@ -78,10 +116,11 @@ footer {
 }
 
 .carousel-inner .carousel-item img {
-    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
-    height: auto;  /* La altura se ajustará automáticamente */
+    width: 100%;
+    height: 100%;  
     object-fit: cover;
     margin:auto;
+    border-radius:10px;
 }
 
 #carouselExampleFade {
@@ -115,7 +154,7 @@ footer {
 @media (max-width: 600px) {
     .carousel-inner .carousel-item img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     #carouselExampleFade,
